@@ -1,6 +1,6 @@
 package ws2.java2.entity;
 
-public class Vehicle {
+public class Vehicle implements Comparable{
 	
 	protected String modelName;
 	protected int maxSpeed;
@@ -44,6 +44,17 @@ public class Vehicle {
 		System.out.println(" 모 델 명 : " + modelName);
 		System.out.println(" 최고속도 : " + maxSpeed + "km/h");
 		System.out.println(" 최대정원 : " + numberLimit + "명");
+	}
+	
+	public int compareTo(Object o) {
+		Vehicle v = (Vehicle)o;
+		if(this.maxSpeed == v.maxSpeed) {
+			return 0;
+		} else if(this.maxSpeed > v.maxSpeed) {
+			return 1;
+		} else {
+			return -1;
+		}
 	}
 
 }

@@ -1,12 +1,13 @@
 package ws2.java2.controller;
 
+import java.util.Arrays;
+
 import ws2.java2.entity.*;
 
-public class VehicleManager {
-	Vehicle[] vehicleArr;
+public class VehicleManager{
+	Vehicle[] vehicleArr = new Vehicle[7];
 	
-	public VehicleManager() {
-		vehicleArr = new Vehicle[7];
+	public VehicleManager() {	
 		vehicleArr[0] = new Airplane("º¸À×747", 1300, 300, 4);
 		vehicleArr[1] = new Airplane("F-16", 1600, 1, 1);
 		vehicleArr[2] = new Car("¼Ò³ªÅ¸3", 180, 5, 10);
@@ -28,15 +29,19 @@ public class VehicleManager {
 	}
 	
 	public void sortByModelName() {
-		for (int i=0; i<vehicleArr.length; i++) {
-			for (int j=i+1; j<vehicleArr.length; j++) {
-				if (vehicleArr[i].getModelName().compareTo(vehicleArr[j].getModelName()) > 0) {
-					Vehicle temp = vehicleArr[i];
-					vehicleArr[i] = vehicleArr[j];
-					vehicleArr[j] = temp;
-				}
-			}
-		}
+		Arrays.sort(vehicleArr);
 	}
+	
+//	public void sortByModelName() {
+//		for (int i=0; i<vehicleArr.length; i++) {
+//			for (int j=i+1; j<vehicleArr.length; j++) {
+//				if (vehicleArr[i].getModelName().compareTo(vehicleArr[j].getModelName()) > 0) {
+//					Vehicle temp = vehicleArr[i];
+//					vehicleArr[i] = vehicleArr[j];
+//					vehicleArr[j] = temp;
+//				}
+//			}
+//		}
+//	}
 }
 

@@ -18,7 +18,7 @@ public class Airplane extends Vehicle {
 	}
 
 	public void displayInfo() {
-		super.displayInfo();;
+		super.displayInfo();
 		System.out.println(" 엔진개수 : " + numOfEngine + "개");
 	}
 }
