@@ -10,7 +10,7 @@ class Orange {
 		return "I am an orange.";
 	}
 }
-class Box<T>{
+class Box1<T>{
 	private T ob;
 	public void set(T o) {
 		ob = o;
@@ -21,8 +21,8 @@ class Box<T>{
 }
 public class p491 {
 	public static void main(String[] args) {
-		Box<Apple> aBox = new Box<Apple>();
-		Box<Orange> oBox = new Box<Orange>();
+		Box1<Apple> aBox = new Box1<Apple>();
+		Box1<Orange> oBox = new Box1<Orange>();
 		
 		//aBox.set("Apple"); // 자료형 불일치로 에러
 		//oBox.set("Orange"); // 자료형 불일치로 에러
