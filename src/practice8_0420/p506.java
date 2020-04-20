@@ -18,7 +18,7 @@ class BoxFactory506 {
 		return box;
 	}
 }
-class Unboxer {
+class Unboxer506 {
 	public static <T extends Number> T openBox(Box506<T> box) {
 		System.out.println("Unboxed data : " + box.get().intValue());
 		return box.get();
@@ -27,7 +27,7 @@ class Unboxer {
 public class p506 {
 	public static void main(String[] args) {
 		Box506<Integer> sBox = BoxFactory506.makeBox(new Integer(5959));
-		int n = Unboxer.openBox(sBox);
+		int n = Unboxer506.openBox(sBox);
 		System.out.println("Returned data : " + n);
 	}
 
