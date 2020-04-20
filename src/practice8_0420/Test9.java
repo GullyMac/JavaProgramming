@@ -31,6 +31,7 @@ public class Test9 {
 		Store<String> s = new Store<String>();
 		s.add("테스트");
 		b2.add("강감찬", s);
+		System.out.println("ok");
 	}
 
 }
