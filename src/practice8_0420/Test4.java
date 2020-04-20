@@ -1,5 +1,7 @@
 package practice8_0420;
 
+import java.util.ArrayList;
+
 class Box<T> {
 	private T t;
 	public void add(T t) {
@@ -8,6 +10,19 @@ class Box<T> {
 	public T get( ) {
 		return this.t;
 	}
+}
+class MyArr<T>{
+	private ArrayList<T> al;
+	public MyArr(int size) {
+		this.al = new ArrayList<T>();
+	}
+	public void setA1(T v) {
+		al.add(v);
+	}
+	public T getAl(int inx) {
+		return al.get(inx);
+	}
+	
 }
 public class Test4 {
 	public static void main(String[] args) {
