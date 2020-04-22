@@ -19,6 +19,7 @@ public class Test7 {
 		
 		Predicate<Integer> p = (a) -> (a > 18);
 		System.out.println(p.test(10));
+		
 		check((a) -> (a > 18), 20);
 
 	}
